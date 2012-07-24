@@ -11,7 +11,7 @@ $name = $_POST[$nameF];
 $message = $_POST[$messageF];
 
 if(validEmail($email)){
-    sendMail($name, $email, $message);
+    sendMail($name, $email, $message, $toAddress, $subject);
     echo $sucMessage;
 } else {
     echo $failMessage;

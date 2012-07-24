@@ -1,5 +1,5 @@
 <?php
-
+include './config.php';
 /**
   Validate an email address.
   Provide email address (raw input)
@@ -51,7 +51,10 @@ function validEmail($email) {
     return $isValid;
 }
 
-function sendMail($aName, $anAddress, $aMessage){
+function sendMail($aName, $aFromAddress, $aMessage, $aToAddress, $aSubject){
+    $headers = 'From: ' . $aFromAddress . '\r\n' . 
+            'Reply-To: ' . $aFromAddress . '\r\n';
     
+    mail($aToAddress, $aSubject . $aName, $aMessage, $headers);
 }
 ?>

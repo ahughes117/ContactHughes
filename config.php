@@ -14,12 +14,12 @@ $nameF = 'name';
 $messageF = 'message';
 
 //email address
-$address = 'alexhughes117@gmail.com';
+$toAddress = 'alexhughes117@gmail.com';
 
-$subject = 'testform';
+$subject = 'testform - ';
 
 //redirect url
-$url = '';
+$url = 'http://www.google.com';
 
 //success message, containing redirect url
 $sucMessage = 'Congratulations, your message has been sent. </br>
