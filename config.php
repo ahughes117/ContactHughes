@@ -28,4 +28,10 @@ $sucMessage = 'Congratulations, your message has been sent. </br>
 //fail message, containing redirect url
 $failMessage = 'Message Sending failed. Check again the appropriate fields</br>
     Click <a href="' . $url . '">here</a> to continue';
+
+//Toggle whether to show message pages or echo the above messages.
+$messagePages = false;
+
+//Message page url
+$messagePUrl = 'EnterALocationHere.com';
 ?>
